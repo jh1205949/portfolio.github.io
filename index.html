@@ -1,0 +1,97 @@
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="main.css" />
+<title> Birds of prey </title>
+  <script>
+function banner(){
+var text = confirm("Did You Really Want to Click on My Banner?");
+return text;
+}
+
+function answer(){
+var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "yes" && radio[i].checked == true) {
+selection = true;
+} //end if statement
+} //end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+
+} //end function answer
+
+</script>
+
+  <style>
+  </style>
+</head>
+  <body id="background">
+    <a onclick="return banner()" href="file:///home/chronos/u-7f6f4a88e9f54b6ea0d991ea65a05d2b8a6a6a2a/MyFiles/Coding/videos.html">
+    <header id="banner">  </header>
+    </a>
+    <nav>
+      <ul id="navmenu">
+        <li class="navitem"> <a href="home.html">Home</a> </li>
+        <li class="navitem"> <a href="games.html">Games</a> </li>
+        <li class="navitem"> <a href="videos.html">Videos</a> </li>
+      </ul>
+    </nav>
+    <div class="rightside">
+
+
+    </div>
+<div class="leftside">
+
+</div>
+<div class="clearfloat"></div>
+
+    <h1> Birds of Prey </h1>
+        <p class="paragraph"> This <i>website</i> will have information on <b>Birds of Prey</b>. Birds of prey can be found all over the world. their are over <span class="wrap-text">560 species</span> of bird of prey including<u> falcons, red kites, osprey, California Condor, and much more  </u>.  </p>
+      <H4> Hear are some facts on Birds of prey</H4>
+    <ol>
+  <li class="listitem">the Andean condor is the largest bird of prey, With a maximum wingspan of 10 ft 10 in and a maximum weight of 33 lb. </li>
+  <li class="listitem">Eagles have 4-5x better vision than humans</li>
+  <li class="listitem">Hawks flying speed is 20-40 m.p.h and can reach up to 120 m.p.h when diving</li>
+</ol>
+<H2> bird trivia </H2>
+<p>What is the largest owl</p>
+<form>
+  <div id="response"> </div>
+  <input type="radio" name="trivia" value="yes"> Blakiston's fish owl <br>
+  <input type="radio" name="trivia" value="no"> Barn owl <br>
+  <input type="radio" name="trivia" value="no">  Great horned owl <br>
+  <input type="radio" name="trivia" value="no"> Eurasian eagle-owl <br>
+  <input onclick="answer()" type="button" id="submit" value="Click Here">
+</form>
+<img src="https://images.stockfreeimages.com/thumb/03p1t9vhy1.jpg?w=576" />
+<img src="https://images.stockfreeimages.com/thumb/0317ch4btl.jpg?w=576" />
+<hr />
+<center> Jack Hammond </center>
+<center>  <a href=https://www.canva.com/>My Favorite Website</a> </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer"> </footer>
+  </body>
+</html>
